@@ -5,81 +5,57 @@
       "url": "/"
     },
     {
-      "name": "About",
+      "name": "Profil",
       "url": "/about"
+    },
+    {
+      "name": "Layanan",
+      "url": "",
+      "hasChildren": true,
+      "children": [
+        {
+          "name": "Jasa Teralis",
+          "url": "/services/las-teralis-pontianak"
+        },
+        {
+          "name": "Jasa Kanopi",
+          "url": "/services/kanopi-pontianak"
+        },
+        {
+          "name": "Jasa Pagar",
+          "url": "/services/pagar-pontianak"
+        },
+        {
+          "name": "Jasa Pintu/Jendela",
+          "url": "/services/pintu-jendela-pontianak"
+        }
+      ]
+    },
+    {
+      "name": "Galeri",
+      "url": "/gallery"
     },
     {
       "name": "Blog",
       "url": "/blog"
     },
     {
-      "name": "Features",
-      "url": "/features"
-    },
-    {
-      "name": "How It Works",
-      "url": "/how-it-works"
-    },
-    {
-      "name": "Pages",
-      "url": "",
-      "hasChildren": true,
-      "children": [
-        {
-          "name": "Career",
-          "url": "/career"
-        },
-
-        {
-          "name": "Integrations",
-          "url": "/integrations"
-        },
-
-        {
-          "name": "Pricing",
-          "url": "/pricing"
-        },
-        {
-          "name": "Sign In",
-          "url": "/signin"
-        },
-
-        {
-          "name": "Elements",
-          "url": "/elements"
-        },
-        {
-          "name": "Changelog",
-          "url": "/changelog"
-        },
-        {
-          "name": "Terms And Conditions",
-          "url": "/terms-and-conditions"
-        }
-      ]
-    },
-    {
       "name": "Contact",
       "url": "/contact"
     }
   ],
-
   "footer": [
     {
-      "name": "About",
+      "name": "Profil",
       "url": "/about"
     },
     {
-      "name": "Contact",
+      "name": "Kontak",
       "url": "/contact"
     },
     {
-      "name": "Elements",
-      "url": "/elements"
-    },
-    {
-      "name": "Changelog",
-      "url": "/changelog"
+      "name": "Galeri",
+      "url": "/gallery"
     }
   ]
 }

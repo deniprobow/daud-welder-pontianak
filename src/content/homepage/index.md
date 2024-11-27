@@ -1,48 +1,34 @@
 ---
 banner:
-  title: "Scale design & dev operations with Avocode Enterprise"
-  content: "A fully integrated suite of authentication & authoriz products, Stytch’s platform removes the headache of."
+  title: "Transformasi Ruang Anda dengan Jasa Las Terbaik di Pontianak!"
+  content: "✨ Mencari Solusi Kanopi, Teralis, dan Pagar yang Sempurna? ✨ Di Pontianak, kami adalah ahli las yang siap mengubah visi Anda menjadi kenyataan!. Dengan pengalaman bertahun-tahun dan dedikasi untuk kualitas, kami menawarkan layanan las yang tidak hanya fungsional tetapi juga estetis."
   image: /images/banner-img.png
   button:
-    label: Download The Theme
+    label: Hasil Karya Kami
     link: "https://themefisher.com/astro-themes/pinwheel-astro"
     enable: true
 
 ##key features
 key_features:
-  title: "The Highlighting Part Of Our Solution"
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas Werat viverra id et aliquet. vulputate egestas sollicitudin.
+  title: "Jasa Yang Kami Tawarkan"
+  description: "Di <b>Daud Welder Pontianak</b>, kami menyediakan berbagai layanan las berkualitas tinggi untuk memenuhi semua kebutuhan konstruksi dan keamanan Anda. Berikut adalah layanan yang kami tawarkan:" 
   feature_list:
-    - icon: "map"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Live Caption
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     - icon: "lock"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Smart Reply
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    - icon: "link"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Sound Amplifier
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    - icon: "bell"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Sound Amplifier
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    - icon: "monitor"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Smart Reply
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    - icon: "map"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Live Caption
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    - icon: "link"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Sound Amplifier
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    - icon: "bell"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Sound Amplifier
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    - icon: "map"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Smart Reply
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    - icon: "monitor"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Live Caption
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      title: Las Teralis
+      content: Teralis yang kami buat tidak hanya memberikan perlindungan, tetapi juga menambah nilai estetika pada rumah Anda. Desain kustom sesuai kebutuhan Anda.
+    - icon: "lock"  #icon package react-feather-icon [https://feathericons.com/]
+      title: Las Pagar
+      content: Pagar yang kuat dan tahan lama untuk melindungi properti Anda. Kami menawarkan berbagai desain yang dapat disesuaikan dengan gaya arsitektur rumah Anda.
+    - icon: "lock"  #icon package react-feather-icon [https://feathericons.com/]
+      title: Las Kanopi
+      content: Kanopi yang kami tawarkan memberikan perlindungan dari cuaca sekaligus menambah keindahan eksterior rumah Anda. Tersedia dalam berbagai model dan ukuran.
+    - icon: "lock"  #icon package react-feather-icon [https://feathericons.com/]
+      title: Las Pintu/Jendela
+      content: Pintu las yang kami buat dirancang untuk memberikan keamanan ekstra tanpa mengorbankan gaya. Pilihan desain yang beragam untuk memenuhi selera Anda.
+    # - icon: "lock"  #icon package react-feather-icon [https://feathericons.com/]
+    #   title: Las Jendela
+    #   content: Jendela las kami tidak hanya berfungsi sebagai pelindung, tetapi juga menambah keindahan interior dan eksterior rumah Anda. Desain yang dapat disesuaikan dengan kebutuhan Anda.
+
 
 #service
 service:
@@ -61,71 +47,60 @@ service:
           image: "/images/sells-by-country.png"
 
   our_service:
-    - title: Accept payments any country in this whole universe
-      desctiption: Donec sollicitudin molestie malesda. Donec sollitudin molestie malesuada. Mauris pellentesque nec, egestas non nisi. Cras ultricies ligula sed
-      image: "/images/collaboration.png"
-      list:
-        - Supporting more than 119 country world
-        - Open transaction with more than currencies
-        - Customer Service with 79 languages
-    - title: Accountability that works for you
-      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas Werat viverra id et aliquet. vulputate egestas sollicitudin.
+    # - title: Accept payments any country in this whole universe
+    #   desctiption: Donec sollicitudin molestie malesda. Donec sollitudin molestie malesuada. Mauris pellentesque nec, egestas non nisi. Cras ultricies ligula sed
+    #   image: "/images/collaboration.png"
+    #   list:
+    #     - Supporting more than 119 country world
+    #     - Open transaction with more than currencies
+    #     - Customer Service with 79 languages
+    - title: Rangkuman Video Hasil Pengerjaan Kanopi
+      description: Simak hasil pengerjaan kanopi kami untuk pelanggan-pelanggan di Pontianak. Dalam video ini, Anda akan melihat bagaimana desain kanopi yang elegan dan fungsional kami berhasil meningkatkan tampilan dan kenyamanan ruang.
       video:
-        thumbnail: "/images/intro-thumbnail.png"
-        video_id: "g3-VxLQO7do"
+        thumbnail: "/images/slide4.png"
+        video_id: "W82MAUPiQa4"
       button:
         label: Know About Us
         link: "#"
         enable: true
 
+# Gallery
+gallery:
+  title: Galeri Karya Unggulan Kami
+  images:
+    - "/images/slide1.png"
+    - "/images/slide4.png"
+    - "/images/slide3.png"
+    - "/images/slide2.png"
+
 #testimonial
 testimonial:
-  title: Our customers have nice things to say about us
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas Werat viverra id et aliquet. vulputate egestas sollicitudin.
+  title: Hal-Hal Menarik dari Pelanggan tentang Layanan Kami
+  description: Kami berkomitmen untuk memberikan kualitas terbaik dan pengalaman yang memuaskan. Berikut adalah beberapa testimoni dari pelanggan kami yang telah merasakan manfaat dari jasa kami.
   testimonial_list:
-    - author: David Cameron
-      avatar: "/images/users/user-5.png"
-      organization: meta limited
-      rating: four
-      content: Our platform helps build secure onboarding authentica experiences & engage your users. We build .
-    - author: David Cameron
-      avatar: "/images/users/user-6.png"
-      organization: meta limited
-      rating: four
-      content: Our platform helps build secure onboarding authentica experiences & engage your users. We build .
-    - author: David Cameron
-      avatar: "/images/users/user-2.png"
-      organization: meta limited
-      rating: three
-      content: Our platform helps build secure onboarding authentica experiences & engage your users. We build .
-    - author: David Cameron
-      avatar: "/images/users/user-3.png"
-      organization: meta limited
+    - author: Rudi Maulana
+      avatar: "/images/noimage.png"
+      organization: Jeruju (Pontianak)
       rating: five
-      content: Our platform helps build secure onboarding authentica experiences & engage your users. We build .
-    - author: David Cameron
-      avatar: "/images/users/user-4.png"
-      organization: meta limited
+      content: Keren sekali hasil kreasi pagar Beliau, sangat rekomen toplah .
+    - author: M. Yunus
+      avatar: "/images/noimage.png"
+      organization: Jl Ujung Pandang (Pontianak)
       rating: five
-      content: Our platform helps build secure onboarding authentica experiences & engage your users. We build .
-    - author: David Cameron
-      avatar: "/images/users/user-1.png"
-      organization: meta limited
-      rating: three
-      content: Our platform helps build secure onboarding authentica experiences & engage your users. We build .
-    - author: David Cameron
-      avatar: "/images/users/user-5.png"
-      organization: meta limited
+      content: Kanopinye rapi pengerjaannye, cepat dan harge e pun terjangkau .
+    - author: Doni Ardiansyah
+      avatar: "/images/noimage.png"
+      organization: Paris 2 (Pontianak)
       rating: five
-      content: Our platform helps build secure onboarding authentica experiences & engage your users. We build .
-    - author: David Cameron
-      avatar: "/images/users/user-5.png"
-      organization: meta limited
+      content: Tak ade lawan lah skill Bg Joni, pokoknye yang nak nyarek jasa las ke Beliau yak.
+    - author: Firman Syafrudin
+      avatar: "/images/noimage.png"
+      organization: Ampera (Pontianak)
       rating: five
-      content: Our platform helps build secure onboarding authentica experiences & engage your users. We build .
-    - author: David Cameron
-      avatar: "/images/users/user-5.png"
-      organization: meta limited
+      content: Hasel karye bang Joni memang top, padu. Ade harge ade rupelah.
+    - author: Arif Irwansyah
+      avatar: "/images/noimage.png"
+      organization: Jeruju (Pontianak)
       rating: five
-      content: Our platform helps build secure onboarding authentica experiences & engage your users. We build .
+      content: Keren sekali, mantap bang kanopinye, Rekomended.
 ---

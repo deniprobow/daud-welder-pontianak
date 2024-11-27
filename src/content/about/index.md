@@ -1,31 +1,28 @@
 ---
-title: "About"
-page_title: "About our company"
+title: "Profil"
+page_title: "Profil Daud Welder Pontianak"
 buttons:
-  - label: Download The Theme
-    link: "https://themefisher.com/astro-themes/pinwheel-astro"
-    enable: true
-  - label: Learn More
+  - label: Lihat Hasil Karya
     link: "#"
-    outline: true
+    outline: false
     enable: true
 
 # counter
 counter:
   - name: "Customers"
-    number: 25
-    messurment: M
+    number: 232
+    messurment: 
     color: "#A3A1FB"
-  - name: "Customers"
-    number: 440
-    messurment: M
+  - name: "Teralis"
+    number: 100
+    messurment: 
     color: "#5EE2A0"
-  - name: "Customers"
-    number: 50
+  - name: "Pagar"
+    number: 90
     messurment: K
     color: "#FE6019"
-  - name: "Customers"
-    number: 20
+  - name: "Kanopi"
+    number: 42
     messurment: K
     color: "#FEC163"
     
@@ -33,29 +30,27 @@ counter:
 gallery:
   title: We started with one single goal Empower entrepreneurs
   images:
-    - "/images/about/gallery-img-1.png"
-    - "/images/about/gallery-img-3.png"
-    - "/images/about/gallery-img-2.png"
+    - "/images/slide1.png"
+    - "/images/slide4.png"
+    - "/images/slide2.png"
 
 ## our works
 features:
-  title: The six core work <br /> drive everything do
+  title: Apa-apa saja <br /> layanan unggulan kami
   button:
-    label: Download The Theme
-    link: "https://themefisher.com/astro-themes/pinwheel-astro"
+    label: Whatsapp Kami
+    link: "#"
     enable: true
   features_list:
-    - title: Accessibility
+    - title: Las Teralis
       content: Nulla porttitor acmsan tinci dunt. posuere cubilia Cudfrae Donec velit neque, autor sit amet aliuam vel
-    - title: Empowerement
+    - title: Las Pagar
       content: Nulla porttitor acmsan tinci dunt. posuere cubilia Cudfrae Donec velit neque, autor sit amet aliuam vel
-    - title: Excellence
+    - title: Las Kanopi
       content: Nulla porttitor acmsan tinci dunt. posuere cubilia Cudfrae Donec velit neque, autor sit amet aliuam vel
-    - title: Innovation
+    - title: Las Pintu
       content: Nulla porttitor acmsan tinci dunt. posuere cubilia Cudfrae Donec velit neque, autor sit amet aliuam vel
-    - title: Innovation
-      content: Nulla porttitor acmsan tinci dunt. posuere cubilia Cudfrae Donec velit neque, autor sit amet aliuam vel
-    - title: Innovation
+    - title: Las Jendela
       content: Nulla porttitor acmsan tinci dunt. posuere cubilia Cudfrae Donec velit neque, autor sit amet aliuam vel
     
 
@@ -83,4 +78,6 @@ members:
       field: Software Engineer
       image: "/images/users/user-3.png"
 ---
-Donec sollicitudin molestie malesda. Donec sollitudin molestie malesuada. Mauris pellentesque nec, egestas non nisi. Cras ultricies ligula sed magna dictum porta. Lorem
+✨ Mencari Solusi Kanopi, Teralis, dan Pagar yang Sempurna? ✨ <br/>
+
+Di Pontianak, kami adalah ahli las yang siap mengubah visi Anda menjadi kenyataan! Dengan pengalaman bertahun-tahun dan dedikasi untuk kualitas, kami menawarkan layanan las yang tidak hanya fungsional tetapi juga estetis.

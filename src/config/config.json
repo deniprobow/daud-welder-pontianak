@@ -1,14 +1,14 @@
 {
   "site": {
-    "title": "Pinwheel Astro",
-    "base_url": "https://pinwheel-astro.vercel.app",
+    "title": "Daud Welder Pontianak",
+    "base_url": "https://daudwelderpontianak.com",
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "/images/favicon.png",
-    "logo": "/images/logo.png",
+    "logo": "/images/dwp_logo.png",
     "logo_width": "147",
     "logo_height": "31",
-    "logo_text": "Pinwheel"
+    "logo_text": "DWP"
   },
 
   "settings": {
@@ -18,32 +18,32 @@
   },
 
   "call_to_action": {
-    "title": "Helping teams in the world with focus",
-    "description": "Lorem ipsum dolor sit sed dmi amet, consectetur adipiscing. Cdo tellus, sed condimentum volutpat.",
+    "title": "Pusing cari jasa las teralis/kanopi dan pagar?",
+    "description": "Jangan khawatir! Kami hadir untuk memberikan solusi terbaik bagi kebutuhan Anda. Dengan pengalaman dan keahlian dalam pengerjaan teralis, kanopi, dan pagar, kami menjamin kualitas dan kepuasan. Setiap proyek kami dirancang khusus untuk memenuhi kebutuhan dan selera Anda. Hubungi kami sekarang dan temukan kemudahan dalam mendapatkan jasa las yang terpercaya!",
     "button": {
-      "label": "Download The Theme",
-      "link": "https://themefisher.com/astro-themes/pinwheel-astro"
+      "label": "Hubungi/WA Kami Sekarang",
+      "link": "https://wa.me/6285845257971"
     }
   },
 
   "disqus": {
     "enable": true,
-    "shortname": "themefisher-template",
+    "shortname": "daud-welder-pontianak",
     "settings": {}
   },
 
   "params": {
-    "footer_description": "Lorem ipsum dolor sit sed dmi amet, consectetur adipiscing. Cdo tellus, sed condimentum volutpat.",
-    "email": "info@andromeda.io",
-    "location": "2118 Thornridge Cir. Syracuse, Connecticut 35624",
-    "phone": "+704-555-0127",
+    "footer_description": "Jasa Las Kanopi, Teralis, Pagar, Pintu/Jendela Terbaik di Pontianak dan Sekitarnya",
+    "email": "joni@daudwelderpontianak.com",
+    "location": "Jl. Husein Hamzah, Pal Lima, Kec. Pontianak Bar., Kota Pontianak, Kalimantan Barat 78114",
+    "phone": "+62 858-4525-7971",
     "contact_form_action": "#",
-    "copyright": "Copyright © 2023 a theme by [Themefisher](https://themefisher.com)"
+    "copyright": "Copyright © 2024 Daud Welder Pontianak. Developed By <a href='https://deniprobow.com' target='_blank' >DeniProbow</a>"
   },
 
   "metadata": {
-    "meta_author": "Themefisher",
+    "meta_author": "DeniProbow",
     "meta_image": "/images/og-image.png",
-    "meta_description": "pinwheel astro"
+    "meta_description": "Daud Welder Pontianak - Jasa Las Pagar, Kanopi dan Teralis di Pontianak/Sekitarnya"
   }
 }

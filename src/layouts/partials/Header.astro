@@ -60,7 +60,7 @@ const { pathname } = Astro.url;
             {menu.hasChildren ? (
               <li class="nav-item nav-dropdown group relative cursor-pointer  dropdown-button">
                 <span
-                  class={`nav-link inline-flex items-center ${
+                  class={`nav-link inline-flex items-center text-white ${
                     menu.children?.map(({ url }) => url).includes(pathname) ||
                     menu.children
                       ?.map(({ url }) => `${url}/`)
@@ -82,7 +82,7 @@ const { pathname } = Astro.url;
                     <li class="nav-dropdown-item">
                       <a
                         href={child.url}
-                        class={`nav-dropdown-link block ${
+                        class={`nav-dropdown-link block  ${
                           (pathname === `${child.url}/` ||
                             pathname === child.url) &&
                           "text-primary"
@@ -98,7 +98,7 @@ const { pathname } = Astro.url;
               <li class="nav-item">
                 <a
                   href={menu.url}
-                  class={`nav-link inline-block lg:block ${
+                  class={`nav-link inline-block lg:block text-white ${
                     (pathname === `${menu.url}/` || pathname === menu.url) &&
                     "active"
                   }`}
@@ -112,12 +112,12 @@ const { pathname } = Astro.url;
       }
       <li class="nav-item mt-2 lg:hidden">
         <a class="btn btn-white btn-sm border-border" href="/signin">
-          Sing Up Now</a
+          Whatsapp Kami</a
         >
       </li>
     </ul>
     <div class="order-1 ml-auto hidden items-center md:order-2 md:ml-0 lg:flex">
-      <a class="btn btn-white btn-sm" href="/signin"> Sing Up Now</a>
+      <a class="btn btn-white btn-sm" href="/signin"> Whatsapp Kami</a>
     </div>
   </nav>
 </header>

@@ -1,0 +1,37 @@
+---
+import Base from "../../layouts/Base.astro";
+import Breadcrumb from "../../layouts/components/Breadcrumb.astro";
+import Masonry from "../../layouts/components/Masonry.astro";
+import { getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+  const services = await getCollection("services");
+  return services.map((entry) => ({
+    params: { service: entry.id.replace("jasa-", "") },
+    props: { 
+      title: entry.data.title,
+      subtitle: entry.data.subtitle,
+      description: entry.data.description,
+      gallery: entry.data.gallery
+    },
+  }));
+}
+
+const { title, subtitle, description, gallery } = Astro.props;
+---
+
+<Base title={title} description={description}>
+  <Breadcrumb title={title} />
+  <section class="section">
+    <div class="container">
+      <div class="mx-auto max-w-[768px] text-center">
+        <h1 class="mb-4 text-4xl font-bold">{title}</h1>
+        <h2 class="mb-6 text-2xl text-gray-600">{subtitle}</h2>
+        <div class="content mb-8 text-lg">
+          <p>{description}</p>
+        </div>
+      </div>
+      <Masonry gallery={gallery} />
+    </div>
+  </section>
+</Base>

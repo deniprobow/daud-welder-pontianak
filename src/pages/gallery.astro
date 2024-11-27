@@ -1,0 +1,33 @@
+---
+import Base from "../layouts/Base.astro";
+import { getEntryBySlug } from "astro:content";
+import Masonry from "../layouts/components/Masonry.astro";
+import CounterComponent from "../layouts/components/about/CounterComponent.astro";
+import Breadcrumb from "../layouts/components/Breadcrumb.astro";
+
+const gallery_content = await getEntryBySlug("gallery", "index");
+const { gallery, counter } = gallery_content.data;
+const page_data = {
+  ...gallery_content.data,
+  content: gallery_content.body,
+};
+---
+
+<Base
+  title={gallery_content.data.title}
+  meta_title={gallery_content.data.meta_title}
+  description={gallery_content.data.description}
+>
+  <Breadcrumb title={gallery_content.data.title} />
+  <section class="page-hero py-16">
+    <div class="container">
+      <div class="page-hero-content mx-auto max-w-[768px] text-center">
+        <div class="content">
+          <Fragment set:html={gallery_content.body} />
+        </div>
+      </div>
+      <CounterComponent counter={counter} />
+      <Masonry gallery={gallery} />
+    </div>
+  </section>
+</Base>

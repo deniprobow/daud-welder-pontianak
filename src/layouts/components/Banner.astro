@@ -8,10 +8,10 @@ const { title, button, image, content } = banner;
 <section class="section banner relative">
   <div class="container">
     <div class="row items-center">
-      <div class="lg:col-6">
-        <h1 class="banner-title" set:html={markdownify(title)} />
+      <div class="lg:col-8">
+        <h1 class="banner-title text-primary" set:html={markdownify(title)} />
 
-        <p class="mt-6" set:html={markdownify(content)} />
+        <p class="mt-6 text-white" set:html={markdownify(content)} />
 
         {
           button.enable && (
@@ -21,7 +21,7 @@ const { title, button, image, content } = banner;
           )
         }
       </div>
-      <div class="lg:col-6">
+      <!-- <div class="lg:col-6">
         <Image
           class="w-full object-contain"
           alt="banner"
@@ -29,15 +29,20 @@ const { title, button, image, content } = banner;
           width={603}
           height={396}
         />
-      </div>
+      </div> -->
     </div>
   </div>
 
-  <Image
+  <!-- <Image
     class="banner-shape absolute -top-28 right-0 -z-[1] w-full max-w-[30%]"
     alt="banner"
     src="/images/banner-shape.png"
     width={496}
     height={466}
-  />
+  /> -->
 </section>
+<style>
+  .banner{
+    background-image: url('/images/bg_header_new.jpg');
+  }
+</style>

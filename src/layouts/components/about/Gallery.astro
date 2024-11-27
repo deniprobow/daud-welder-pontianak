@@ -8,22 +8,24 @@ const { title, images } = gallery;
   <div class="container">
     <div class="row justify-center text-center">
       <div class="col-8">
-        <h2 set:html={markdownify(title)} />
+        <h2 class="mb-8" set:html={markdownify(title)} />
       </div>
     </div>
 
     <div class="relative">
-      <div class="row" id="photo-gallery">
+      <div class="columns-1 gap-4 sm:columns-2 md:columns-2 lg:columns-2 space-y-4">
         {
-          images.map((image: any) => (
-            <div class="picture-item col-6 mt-12">
-              {" "}
-              <img class="w-full" src={image} alt="" />
+          images.map((item: any) => (
+            <div class="break-inside-avoid">
+              <img
+                class="w-full h-auto rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+                src={item}
+                alt="gallery image"
+                loading="lazy"
+              />
             </div>
           ))
         }
-
-        <div class="js-shuffle-sizer col-1"></div>
       </div>
       <img
         class="absolute -bottom-5 -left-5 -z-[1]"
@@ -41,8 +43,8 @@ const { title, images } = gallery;
 
 <script>
   import Shuffle from "shufflejs";
-  const element = document.getElementById("photo-gallery");
-  const sizer = element.querySelector(".js-shuffle-sizer");
+  const element:any = document.getElementById("photo-gallery");
+  const sizer = element?.querySelector(".js-shuffle-sizer");
   // Assumes you're using the UMD version of Shuffle (for example, from unpkg.com).
   const shuffleInstance = new Shuffle(element, {
     itemSelector: ".picture-item",

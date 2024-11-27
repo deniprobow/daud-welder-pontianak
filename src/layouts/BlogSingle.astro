@@ -1,9 +1,9 @@
 ---
-import dateFormat from "@/lib/utils/dateFormat";
-import readingTime from "@/lib/utils/readingTime";
+import dateFormat from "../lib/utils/dateFormat";
+import readingTime from "../lib/utils/readingTime";
 import Disqus from "./function-components/Disqus";
-
-import { humanize, slugify } from "@/lib/utils/textConverter";
+import Breadcrumb from "./components/Breadcrumb.astro";
+import { humanize, slugify } from "../lib/utils/textConverter";
 import {
   FaRegCalendarAlt,
   FaRegClock,
@@ -16,6 +16,7 @@ const { post } = Astro.props;
 const { Content } = await post.render();
 ---
 
+<Breadcrumb title={post.data.title} />
 <section class="section blog-single">
   <div class="container">
     <div class="row justify-center">
@@ -67,7 +68,7 @@ const { Content } = await post.render();
         <div class="content">
           <Content />
         </div>
-        <Disqus client:load />
+        <!-- <Disqus client:load /> -->
       </div>
     </div>
   </div>

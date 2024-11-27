@@ -1,0 +1,22 @@
+---
+const { gallery } = Astro.props;
+---
+
+<div class="py-16">
+  <div class="container">
+    <div class="columns-1 gap-4 sm:columns-2 md:columns-3 lg:columns-4 space-y-4">
+      {
+        gallery.map((item: any) => (
+          <div class="break-inside-avoid">
+            <img
+              class="w-full h-auto rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+              src={item.image}
+              alt="gallery image"
+              loading="lazy"
+            />
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</div>
