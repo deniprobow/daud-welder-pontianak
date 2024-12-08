@@ -60,8 +60,8 @@ service:
         thumbnail: "/images/slide4.webp"
         video_id: "W82MAUPiQa4"
       button:
-        label: Know About Us
-        link: "#"
+        label: Lihat Lainnya
+        link: "/gallery"
         enable: true
 
 # Gallery

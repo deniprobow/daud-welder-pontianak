@@ -28,7 +28,7 @@ counter:
     
 # Gallery
 gallery:
-  title: We started with one single goal Empower entrepreneurs
+  title: Hasil Karya Kami
   images:
     - "/images/slide1.png"
     - "/images/slide4.png"

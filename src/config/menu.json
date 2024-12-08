@@ -15,19 +15,19 @@
       "children": [
         {
           "name": "Jasa Teralis",
-          "url": "/services/las-teralis-pontianak"
+          "url": "/services/jasa-las-teralis"
         },
         {
           "name": "Jasa Kanopi",
-          "url": "/services/kanopi-pontianak"
+          "url": "/services/jasa-kanopi"
         },
         {
           "name": "Jasa Pagar",
-          "url": "/services/pagar-pontianak"
+          "url": "/services/jasa-pagar"
         },
         {
           "name": "Jasa Pintu/Jendela",
-          "url": "/services/pintu-jendela-pontianak"
+          "url": "/services/jasa-pintu-jendela"
         }
       ]
     },
