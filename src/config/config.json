@@ -4,8 +4,8 @@
     "base_url": "https://daudwelderpontianak.com",
     "base_path": "/",
     "trailing_slash": false,
-    "favicon": "/images/favicon.png",
-    "logo": "/images/dwp_logo.png",
+    "favicon": "/images/dwp_logo_favicon.webp",
+    "logo": "/images/dwp_logo.webp",
     "logo_width": "147",
     "logo_height": "31",
     "logo_text": "DWP"

@@ -1,6 +1,25 @@
 ---
 import TestimonialSlider from "@/layouts/function-components/TestimonialSlider";
-const { testimonial } = Astro.props;
+import { API } from "@/lib/enums/api";
+
+// Fetch Google Reviews
+const response = await fetch(`${API.BASE_URL_API}${API.TESTIMONIAL_ENDPOINT}`);
+const googleReviews = await response.json();
+
+// Transform Google Reviews to match expected format
+const testimonial_list = googleReviews.map((review: any) => ({
+  author: review.author_name,
+  avatar: review.profile_photo_url || "/images/placeholder-image.jpg",
+  organization: "Google Review",
+  content: review.text,
+  rating: `rating-${review.rating}` // This matches the CSS class format used in TestimonialSlider
+}));
+
+const testimonial = {
+  title: "What Our Customers Say",
+  description: "Real feedback from our valued customers about their experiences with our services.",
+  testimonial_list
+};
 ---
 
 <section class="reviews">

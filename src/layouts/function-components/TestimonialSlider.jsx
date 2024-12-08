@@ -11,6 +11,19 @@ const TestimonialSlider = ({ list }) => {
   const [swiper, setSwiper] = useState(null);
   const paginationRef = useRef(null);
 
+  const renderStars = (rating) => {
+    // Extract the number from rating string (e.g., "rating-4" becomes 4)
+    const ratingNumber = parseInt(rating.split('-')[1]) || 0;
+    
+    return Array.from({ length: 5 }, (_, index) => (
+      <Star 
+        key={index}
+        color="#FEC107"
+        fill={index < ratingNumber ? "#FEC107" : "none"}
+      />
+    ));
+  };
+
   return (
     <div className="reviews-carousel relative">
       <Swiper
@@ -45,13 +58,9 @@ const TestimonialSlider = ({ list }) => {
               <p className="mb-4 text-[#666]">{item.organization}</p>
               <p>{item.content}</p>
               <div
-                className={`review-rating mt-6 flex items-center justify-center space-x-2.5 ${item.rating}  `}
+                className={`review-rating mt-6 flex items-center justify-center space-x-2.5 ${item.rating}`}
               >
-                <Star />
-                <Star />
-                <Star />
-                <Star />
-                <Star />
+                {renderStars(item.rating)}
               </div>
             </div>
           </SwiperSlide>

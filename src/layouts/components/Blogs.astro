@@ -1,11 +1,29 @@
 ---
 import { Image } from "astro:assets";
-import config from "@/config/config.json";
-import dateFormat from "@/lib/utils/dateFormat";
-import readingTime from "@/lib/utils/readingTime";
-import { humanize, plainify, slugify } from "@/lib/utils/textConverter";
-const { summary_length } = config.settings;
-const { posts } = Astro.props;
+import { API } from "../../lib/enums/api";
+import dateFormat from "../../lib/utils/dateFormat";
+import readingTime from "../../lib/utils/readingTime";
+import { humanize, plainify, slugify } from "../../lib/utils/textConverter";
+
+const summary_length = 200; // Default summary length if config is not available
+
+// Fetch posts from WordPress API with embedded data
+const response = await fetch(`${API.BASE_URL_API}${API.POSTS_ENDPOINT}?_embed`);
+const wpPosts = await response.json();
+
+// Transform WordPress posts to match expected format
+const posts = wpPosts.map((post: any) => ({
+  slug: post.slug,
+  data: {
+    title: post.title.rendered,
+    image: post.featured_media ? 
+      post._embedded?.["wp:featuredmedia"]?.[0]?.source_url || "/images/placeholder-image.jpg" 
+      : "/images/placeholder-image.jpg",
+    categories: post._embedded?.["wp:term"]?.[0]?.map((cat: any) => cat.name) || ["Uncategorized"],
+    date: post.date
+  },
+  body: post.content.rendered
+}));
 ---
 
 <div class="row">
@@ -18,11 +36,11 @@ const { posts } = Astro.props;
             width={335}
             height={210}
             src={item.data.image}
-            alt=""
+            alt={item.data.title}
           />
           <div class="card-content">
             <div class="card-tags space-x-1">
-              {item.data.categories.map((category: any) => (
+              {item.data.categories.map((category: string) => (
                 <a class="tag" href={`/categories/${slugify(category)}`}>
                   {humanize(category)}
                 </a>

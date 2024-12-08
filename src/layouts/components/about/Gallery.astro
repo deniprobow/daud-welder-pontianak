@@ -1,7 +1,18 @@
 ---
 import { markdownify } from "@/lib/utils/textConverter";
+import { API } from "@/lib/enums/api";
+
 const { gallery } = Astro.props;
-const { title, images } = gallery;
+const { title } = gallery;
+
+// Fetch media from WordPress API
+const response = await fetch(`${API.BASE_URL_API}${API.MEDIA_ENDPOINT}`);
+const mediaItems = await response.json();
+
+// Transform media items to get image URLs
+const images = mediaItems.slice(0,4).map((item: any) => 
+  item.source_url || item.guid.rendered
+);
 ---
 
 <section class="section">
@@ -15,11 +26,11 @@ const { title, images } = gallery;
     <div class="relative">
       <div class="columns-1 gap-4 sm:columns-2 md:columns-2 lg:columns-2 space-y-4">
         {
-          images.map((item: any) => (
+          images.map((imageUrl: string) => (
             <div class="break-inside-avoid">
               <img
                 class="w-full h-auto rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
-                src={item}
+                src={imageUrl+'.webp'}
                 alt="gallery image"
                 loading="lazy"
               />
@@ -29,12 +40,12 @@ const { title, images } = gallery;
       </div>
       <img
         class="absolute -bottom-5 -left-5 -z-[1]"
-        src="images/shape-2.png"
+        src="/images/shape-2.png"
         alt=""
       />
       <img
         class="absolute -right-5 bottom-20 -z-[1] h-16 w-16"
-        src="images/shape.png"
+        src="/images/shape.png"
         alt=""
       />
     </div>

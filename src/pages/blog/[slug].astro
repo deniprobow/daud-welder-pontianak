@@ -1,0 +1,113 @@
+---
+import Base from "../../layouts/Base.astro";
+import { API } from "../../lib/enums/api";
+import Breadcrumb from "../../layouts/components/Breadcrumb.astro";
+
+interface WPPost {
+  id: number;
+  slug: string;
+  title: {
+    rendered: string;
+  };
+  content: {
+    rendered: string;
+  };
+  date: string;
+  featured_media: number;
+  _embedded?: {
+    author?: Array<{
+      name: string;
+    }>;
+    'wp:featuredmedia'?: Array<{
+      source_url: string;
+    }>;
+    'wp:term'?: Array<Array<{
+      name: string;
+      slug: string;
+    }>>;
+  };
+}
+
+export async function getStaticPaths() {
+  try {
+    const response = await fetch(`${API.BASE_URL_API}${API.POSTS_ENDPOINT}?_embed`);
+    const posts: WPPost[] = await response.json();
+    
+    return posts.map((post) => {
+      return {
+        params: { slug: post.slug },
+        props: { post },
+      };
+    });
+  } catch (error) {
+    console.error("Error fetching posts:", error);
+    return [];
+  }
+}
+
+const { post } = Astro.props;
+
+// Format the date
+const formatDate = (dateString: string) => {
+  const date = new Date(dateString);
+  return date.toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  });
+};
+
+const categories = post._embedded?.['wp:term']?.[0] || [];
+---
+
+<Base>
+  <Breadcrumb title={post.title.rendered} />
+  <section class="section blog-single">
+    <div class="container">
+      <div class="row justify-center">
+        <div class="lg:col-10">
+          {post.featured_media && post._embedded?.['wp:featuredmedia']?.[0]?.source_url && (
+            <img
+              class="w-full rounded-xl"
+              src={post._embedded['wp:featuredmedia'][0].source_url}
+              alt={post.title.rendered}
+              width={920}
+              height={450}
+            />
+          )}
+        </div>
+        <div class="mt-10 max-w-[810px] lg:col-9">
+          <h1 class="h2" set:html={post.title.rendered} />
+          
+          <div class="mb-5 mt-6 flex items-center space-x-2">
+            <ul class="mb-4">
+              <li class="mr-4 inline-block">
+                <i class="fas fa-user mr-2"></i>
+                {post._embedded?.author?.[0]?.name || 'Anonymous'}
+              </li>
+              <li class="mr-4 inline-block">
+                <i class="fas fa-calendar mr-2"></i>
+                {formatDate(post.date)}
+              </li>
+              {categories.length > 0 && (
+                <li class="mr-4 inline-block">
+                  <i class="fas fa-folder mr-2"></i>
+                  {categories.map((category, index) => (
+                    <>
+                      <a href={`/categories/${category.slug}`} class="hover:text-primary">
+                        {category.name}
+                      </a>
+                      {index !== categories.length - 1 && ", "}
+                    </>
+                  ))}
+                </li>
+              )}
+            </ul>
+          </div>
+
+          <div class="content prose max-w-none" set:html={post.content.rendered} />
+        </div>
+      </div>
+    </div>
+  </section>
+</Base>

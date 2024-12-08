@@ -39,7 +39,7 @@ features:
   title: Apa-apa saja <br /> layanan unggulan kami
   button:
     label: Whatsapp Kami
-    link: "#"
+    link: "https://wa.me/6285845257971"
     enable: true
   features_list:
     - title: Las Teralis

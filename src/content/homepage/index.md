@@ -57,7 +57,7 @@ service:
     - title: Rangkuman Video Hasil Pengerjaan Kanopi
       description: Simak hasil pengerjaan kanopi kami untuk pelanggan-pelanggan di Pontianak. Dalam video ini, Anda akan melihat bagaimana desain kanopi yang elegan dan fungsional kami berhasil meningkatkan tampilan dan kenyamanan ruang.
       video:
-        thumbnail: "/images/slide4.png"
+        thumbnail: "/images/slide4.webp"
         video_id: "W82MAUPiQa4"
       button:
         label: Know About Us
