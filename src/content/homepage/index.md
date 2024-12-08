@@ -5,7 +5,7 @@ banner:
   image: /images/banner-img.png
   button:
     label: Hasil Karya Kami
-    link: "https://themefisher.com/astro-themes/pinwheel-astro"
+    link: "/gallery"
     enable: true
 
 ##key features
